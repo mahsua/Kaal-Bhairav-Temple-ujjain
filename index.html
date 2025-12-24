@@ -11,7 +11,7 @@
         body { font-family: 'Noto Sans Devanagari', sans-serif; }
         .english-font { font-family: 'Poppins', sans-serif; }
         .hero-section {
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1621619671683-1994a8f94cb9?q=80&w=2070&auto=format&fit=crop');
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9)), url('./hero.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -20,7 +20,6 @@
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mahakal_Lok_Corridor_Ujjain.jpg/1200px-Mahakal_Lok_Corridor_Ujjain.jpg');
             background-size: cover; 
             background-position: center;
-            /* Fallback color if image fails */
             background-color: #1e293b;
         }
         .card-hover {
@@ -35,26 +34,28 @@
 </head>
 <body class="bg-slate-50 text-slate-900 selection:bg-orange-500 selection:text-white">
 
-    <!-- Navbar -->
+    <!-- Navbar (Hindi Header) -->
     <nav class="bg-slate-900/95 backdrop-blur-md text-white shadow-xl sticky top-0 z-50 border-b border-slate-700">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center font-bold text-white shadow-lg text-xl">M</div>
                 <div class="flex flex-col">
-                    <span class="text-xl font-bold english-font leading-none">Mahsua<span class="text-orange-500">India</span></span>
-                    <span class="text-[10px] text-slate-400 uppercase tracking-widest">Travel & Culture</span>
+                    <span class="text-xl font-bold english-font leading-none">श्री <span class="text-orange-500">काल भैरव</span> मंदिर उज्जैन</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-widest">यह मंदिर 1000 वर्ष से भी अधिक पुराना है।</span>
                 </div>
             </div>
-            <div class="hidden lg:flex space-x-6 text-sm font-medium english-font items-center text-slate-300">
-                <a href="#mahakal" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Mahakal</a>
-                <a href="#mahakallok" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Mahakal Lok</a>
-                <a href="#bhairav" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Kaal Bhairav</a>
-                <a href="#sacred" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Sacred Spots</a>
-                <a href="#contact" class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2 rounded-full hover:shadow-lg hover:scale-105 transition transform flex items-center gap-2">
-                    <i data-lucide="calendar-check" class="w-4 h-4"></i> Plan Trip
+            <!-- Hindi Menu Items -->
+            <div class="hidden lg:flex space-x-6 text-sm font-medium items-center text-slate-300">
+                <a href="#mahakal" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">श्री महाकाल</a>
+                <a href="#mahakallok" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">महाकाल लोक</a>
+                <a href="#bhairav" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">काल भैरव</a>
+                <a href="#sacred" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">पवित्र स्थल</a>
+                <a href="#location" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">लोकेशन</a>
+                <a href="#contact" class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2 rounded-full hover:shadow-lg hover:scale-105 transition transform flex items-center gap-2 font-bold">
+                    <i data-lucide="calendar-check" class="w-4 h-4"></i> यात्रा प्लान करें
                 </a>
             </div>
-            <!-- Mobile Menu Button (Visible on small screens) -->
+            <!-- Mobile Menu Button -->
             <button class="lg:hidden text-white"><i data-lucide="menu"></i></button>
         </div>
     </nav>
@@ -80,7 +81,6 @@
                 </a>
             </div>
         </div>
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-10 animate-bounce text-white/50">
             <i data-lucide="chevrons-down" class="w-8 h-8"></i>
         </div>
@@ -116,7 +116,8 @@
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-200 rounded-full opacity-50 blur-xl"></div>
                     <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-red-200 rounded-full opacity-50 blur-xl"></div>
-                    <img src="https://images.unsplash.com/photo-1605634352778-957790757d23?q=80&w=1600&auto=format&fit=crop" alt="Mahakaleshwar Temple" class="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover z-10">
+                    <!-- LOCAL IMAGE PATH -->
+                    <img src="./Baba_mahakal_Temple.jpg" alt="Mahakaleshwar Temple" class="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover z-10">
                     <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-xl p-6 rounded-2xl shadow-lg z-20 border border-white/50">
                         <div class="flex items-center gap-4">
                             <div class="bg-orange-600 text-white p-3 rounded-full">
@@ -240,14 +241,15 @@
 
                 <!-- Image Grid -->
                 <div class="grid grid-cols-2 gap-4 h-full">
-                    <img src="https://images.unsplash.com/photo-1608625902047-9877b1022204?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8 card-hover" alt="Ritual">
-                    <img src="https://images.unsplash.com/photo-1596541223513-33e30f14f526?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg w-full h-64 object-cover mb-8 card-hover" alt="Ujjain Vibes">
+                    <!-- LOCAL IMAGE PATHS -->
+                    <img src="./Ritual.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8 card-hover" alt="Ritual">
+                    <img src="./Ujjain_Vibes.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover mb-8 card-hover" alt="Ujjain Vibes">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OTHER SACRED SPOTS (NEW SECTION) -->
+    <!-- OTHER SACRED SPOTS -->
     <section id="sacred" class="py-24 bg-orange-50">
         <div class="container mx-auto px-4 max-w-7xl">
             <h2 class="text-4xl font-bold text-center text-slate-900 mb-12">उज्जैन के अन्य पवित्र स्थल</h2>
@@ -256,8 +258,8 @@
                 <!-- Harsiddhi Mata -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
                     <div class="h-48 bg-slate-800 relative">
-                        <!-- Use a generic lamp image if specific temple image fails -->
-                        <img src="https://images.unsplash.com/photo-1516212613589-a3b04323630f?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <!-- LOCAL IMAGE PATH -->
+                        <img src="./harsiddhi-temple-ujjain.png" class="w-full h-full object-cover opacity-80">
                         <div class="absolute bottom-4 left-4 text-white font-bold text-xl">हरसिद्धि माता (शक्तिपीठ)</div>
                     </div>
                     <div class="p-6">
@@ -271,7 +273,8 @@
                 <!-- Sandipani Ashram -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
                     <div class="h-48 bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1623838815348-1f636c0a002c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <!-- LOCAL IMAGE PATH -->
+                        <img src="./Sandipani-Ashram.png" class="w-full h-full object-cover opacity-80">
                         <div class="absolute bottom-4 left-4 text-white font-bold text-xl">संदीपनी आश्रम</div>
                     </div>
                     <div class="p-6">
@@ -285,7 +288,8 @@
                 <!-- Mangalnath -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
                     <div class="h-48 bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1532599268803-34d284992bb3?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <!-- LOCAL IMAGE PATH -->
+                        <img src="./Mangalnath-Temple.png" class="w-full h-full object-cover opacity-80">
                         <div class="absolute bottom-4 left-4 text-white font-bold text-xl">मंगलनाथ मंदिर</div>
                     </div>
                     <div class="p-6">
@@ -299,77 +303,80 @@
         </div>
     </section>
 
-    <!-- TRAVEL PROTOCOL -->
-    <section class="py-20 bg-slate-900 text-white border-t border-slate-800">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <h2 class="text-3xl font-bold text-center mb-12">यात्रा का सही क्रम (Protocol)</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 relative">
-                <!-- Connecting Line (Desktop) -->
-                <div class="hidden md:block absolute top-1/2 left-20 right-20 h-1 bg-slate-700 -z-0"></div>
-
-                <!-- Step 1 -->
-                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
-                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">1</div>
-                    <h3 class="text-xl font-bold mb-1">शिप्रा स्नान</h3>
-                    <p class="text-slate-400 text-xs">राम घाट पर शुद्धि स्नान।</p>
+    <!-- NEW PLAN YOUR VISIT / MAP SECTION -->
+    <section id="location" class="py-12 bg-white border-t border-slate-200"> <!-- Reduced Padding -->
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                <i data-lucide="map" class="text-orange-600"></i> Plan Your Visit (यात्रा की योजना बनाएं)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <!-- LEFT: MAP -->
+                <div class="w-full h-[450px] bg-slate-100 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29333.47550233047!2d75.7327254108398!3d23.2181681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963768f0c37a40f%3A0xa82c7dd354f397d2!2sKaal%20Bhairav%20Mandir!5e0!3m2!1sen!2sin!4v1766565514342!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
-                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">2</div>
-                    <h3 class="text-xl font-bold mb-1">महाकाल दर्शन</h3>
-                    <p class="text-slate-400 text-xs">राजाधिराज का आशीर्वाद।</p>
-                </div>
+                <!-- RIGHT: INFORMATION CARD (LAYOUT REQUESTED) -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-md h-full flex flex-col justify-center">
+                    
+                    <!-- Location -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">Location</h3>
+                        <p class="text-slate-600">
+                            Jail Road, Bhairav Garh, Ujjain, Madhya Pradesh 456003<br>
+                            (Located on the banks of River Kshipra)
+                        </p>
+                    </div>
 
-                <!-- Step 3 -->
-                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
-                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">3</div>
-                    <h3 class="text-xl font-bold mb-1">काल भैरव</h3>
-                    <p class="text-slate-400 text-xs">नगर से जाने की आज्ञा।</p>
+                    <!-- Timings -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">Timings</h3>
+                        <p class="text-slate-600">
+                            <strong>Daily:</strong> 6:00 AM - 10:00 PM<br>
+                            <strong>Aarti:</strong> 7:00 AM (Morning) & 6:00 PM (Evening)
+                        </p>
+                    </div>
+
+                    <!-- Entry Fee -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">Entry Fee</h3>
+                        <p class="text-slate-600">
+                            Free for all visitors.<br>
+                            <span class="text-sm text-slate-500">(Special Puja items & fast-track tickets may vary)</span>
+                        </p>
+                    </div>
+
+                    <!-- Quote/Best Time -->
+                    <div class="border-t border-slate-200 pt-6 mt-2">
+                        <p class="text-orange-700 italic font-medium">
+                            "The best time to visit is early morning for Bhasma Aarti at Mahakal, or after 6:00 PM for the evening Aarti at Kaal Bhairav."
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer / Mahsua Branding -->
-    <footer id="contact" class="bg-white pt-16 pb-8">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 mb-12">
-                <!-- Brand Info -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">M</div>
-                        <span class="text-2xl font-bold text-slate-900 english-font">Mahsua<span class="text-orange-600">India</span></span>
-                    </div>
-                    <p class="text-slate-500 leading-relaxed max-w-md">
-                        Connecting you to the roots of Indian spirituality through technology. We simplify your pilgrimage with digital services.
-                    </p>
-                    <div class="flex gap-4 mt-6">
-                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="youtube" class="w-5 h-5"></i></a>
-                    </div>
-                </div>
-
-                <!-- Services Box -->
-                <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full blur-3xl opacity-20 -mr-10 -mt-10"></div>
-                    <p class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-2">Need Help?</p>
-                    <h3 class="text-2xl font-bold mb-4">Mahsua Digital Seva Kendra</h3>
-                    <ul class="space-y-2 text-slate-300 text-sm mb-6">
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Train & Flight Booking</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Hotel Reservation in Ujjain</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Bhasma Aarti Booking Assistance</li>
-                    </ul>
-                    <button class="bg-green-600 hover:bg-green-700 text-white w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us Now
-                    </button>
-                </div>
-            </div>
+    <footer id="contact" class="bg-white pt-8 pb-8 border-t border-slate-100">
+        <div class="container mx-auto px-4 text-center">
             
-            <div class="border-t border-slate-100 pt-8 text-center text-sm text-slate-400 flex flex-col md:flex-row justify-between items-center">
-                <span>&copy; 2025 Mahsua India. All Rights Reserved.</span>
-                <span class="mt-2 md:mt-0 flex items-center gap-1">Built with <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> by Shivam Kushwaha</span>
+            <!-- Disclaimer and Donate Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button onclick="window.location.href='./disclaimer.html'" class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-6 py-2 rounded-full font-bold transition">
+                    Disclaimer
+                </button>
+                <button onclick="window.location.href='https://technology.mahsua.com/pages/donate.html'" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
+                    <i data-lucide="heart" class="w-4 h-4"></i> Donate To Developer
+                </button>
+            </div>
+
+            <!-- Copyright and Credits -->
+            <div class="text-sm text-slate-500 space-y-2">
+                <p>&copy; 2025 Kamla Park Info. All rights reserved.</p>
+                <p class="flex items-center justify-center gap-1">
+                    Developed by <a href="https://technology.mahsua.com"><span class="font-bold text-orange-600">Mahsua Technology</span></a> With <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> INDIA (Free and Open-Source)
+                </p>
             </div>
         </div>
     </footer>

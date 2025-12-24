@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Disclaimer | Chitrakoot Dham Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Disclaimer: This Chitrakoot Dham information website is created by Mahsua Technology as a public service initiative. It is not an official temple or government website." />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- Tailwind for card layout -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font for card -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f9fafb;
+    }
+    .site-footer { margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo">ॐ</div>
+      <div class="brand-text">
+        <span class="brand-title">Chitrakoot Dham</span>
+        <span class="brand-subtitle">Where Divinity and Nature Meet</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
+      <span class="chevron"></span>
+    </button>
+
+    <nav class="main-nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#history">History</a>
+      <a href="../index.html#attractions">Attractions</a>
+      <a href="../index.html#plan-visit">Plan Visit</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="donate.html" class="btn-nav">❤ Donate</a>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB + LANGUAGE TOGGLE -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <div class="breadcrumb-left">
+        <a href="../index.html" id="crumb-home">Home</a>
+        <span>›</span>
+        <span id="crumb-page">Disclaimer</span>
+      </div>
+      <div class="breadcrumb-right">
+        <div class="lang-toggle">
+          <button class="lang-btn lang-en active" type="button" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn lang-hi" type="button" onclick="setLanguage('hi')">हिन्दी</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex flex-col min-h-[70vh]">
+    <section class="container mx-auto px-4 py-12 max-w-4xl">
+      <div class="bg-white rounded-xl shadow-md p-8 md:p-12 border-t-4 border-orange-500">
+
+        <h1 id="disc-heading"
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-100">
+          Disclaimer
+        </h1>
+
+        <div class="space-y-6 text-gray-700 leading-relaxed">
+
+          <p id="disc-p1">
+            This website has been created by
+            <strong class="text-gray-900">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a>
+            </strong>
+            as a <strong class="text-gray-900">public service initiative</strong> to provide basic information
+            about Chitrakoot Dham for the convenience of visitors and the local community.
+          </p>
+
+          <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6">
+            <p id="disc-warning" class="font-medium text-orange-900">
+              It is <strong class="text-red-600">not the official website</strong> of any concerned temple, trust,
+              organization or government department, nor is it directly associated, endorsed, or authorized by the
+              management or administration of these locations.
+            </p>
+          </div>
+
+          <p id="disc-p2">
+            All details such as photos, basic information, timings, directions, and contact information are collected
+            from publicly available sources, local knowledge, or user submissions.
+          </p>
+
+          <p id="disc-p3">
+            While we try to keep the content accurate and updated,
+            <strong class="text-gray-900">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a>
+              does not guarantee the completeness, accuracy, or official status of any information presented
+            </strong>
+            on this website.
+          </p>
+
+          <p id="disc-p4">
+            If you represent the official administration of any place shown on this website and wish to request
+            changes, corrections, or removal of specific content, please contact us at
+            <a href="mailto:contact@mahsua.com">contact@mahsua.com</a>.
+            We will respond promptly and respectfully.
+          </p>
+
+          <p id="disc-p5">
+            <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a>
+            provides this website <strong class="text-gray-900">free of cost</strong> as a community-support effort.
+          </p>
+
+          <p id="disc-p6">
+            Advertisements displayed on this website (if any) help cover hosting, development, and maintenance
+            expenses. These ads may be <strong class="text-gray-900">served by Google AdSense or other providers</strong>,
+            and <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a>
+            does not endorse any product or service shown through those ads.
+          </p>
+
+          <hr class="my-8 border-gray-200">
+
+          <h3 id="disc-terms-heading" class="text-lg font-bold text-gray-900">Terms of Use</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li id="disc-li1">
+              By using this website, you agree to the terms of this disclaimer.
+            </li>
+            <li id="disc-li2">
+              If you do not agree with any part of this disclaimer, please refrain from using the website.
+            </li>
+            <li id="disc-li3">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a>
+              reserves the right to modify or update this disclaimer at any time without prior notice.
+              Continued use of the website after changes implies acceptance of the updated terms.
+            </li>
+          </ul>
+
+          <div class="mt-8 p-6 bg-gray-50 rounded-lg text-center">
+            <p id="disc-thanks1" class="mb-2">Thank you for visiting.</p>
+            <p id="disc-thanks2" class="font-medium text-gray-900">
+              We hope you find the information useful and informative.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-links">
+        <a href="disclaimer.html">
+          <span class="footer-icon">⚖️</span>
+          <span id="footer-disclaimer">Disclaimer</span>
+        </a>
+        <span class="footer-sep">|</span>
+        <a href="donate.html">
+          <span class="footer-icon">💝</span>
+          <span id="footer-donate">Donate</span>
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <span class="footer-icon">💻</span>
+        <span id="footer-dev-text">
+          Developed by <a href="https://technology.mahsua.com" target="_blank" rel="noopener">Mahsua Technology</a>
+          with ❤️ from India (Free and Open-Source)
+        </span>
+      </div>
+
+      <div class="footer-copy">
+        <span id="footer-copy">© 2025 Chitrakoot Dham • Designed with devotion</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      const menuBtn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('open');
+      menuBtn.classList.toggle('open');
+    }
+
+    const translations = {
+      en: {
+        'crumb-home': 'Home',
+        'crumb-page': 'Disclaimer',
+
+        'disc-heading': 'Disclaimer',
+        'disc-p1': 'This website has been created by <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a></strong> as a <strong class="text-gray-900">public service initiative</strong> to provide basic information about Chitrakoot Dham for the convenience of visitors and the local community.',
+        'disc-warning': 'It is <strong class="text-red-600">not the official website</strong> of any concerned temple, trust, organization or government department, nor is it directly associated, endorsed, or authorized by the management or administration of these locations.',
+        'disc-p2': 'All details such as photos, basic information, timings, directions, and contact information are collected from publicly available sources, local knowledge, or user submissions.',
+        'disc-p3': 'While we try to keep the content accurate and updated, <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> does not guarantee the completeness, accuracy, or official status of any information presented</strong> on this website.',
+        'disc-p4': 'If you represent the official administration of any place shown on this website and wish to request changes, corrections, or removal of specific content, please contact us at <a href="https://mahsua.com/contact" class="text-blue-600 hover:underline font-medium" target="_blank" rel="noopener">mahsua.com/contact</a>. We will respond promptly and respectfully.',
+        'disc-p5': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> provides this website <strong class="text-gray-900">free of cost</strong> as a community-support effort.',
+        'disc-p6': 'Advertisements displayed on this website (if any) help cover hosting, development, and maintenance expenses. These ads may be <strong class="text-gray-900">served by Google AdSense or other providers</strong>, and <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> does not endorse any product or service shown through those ads.',
+
+        'disc-terms-heading': 'Terms of Use',
+        'disc-li1': 'By using this website, you agree to the terms of this disclaimer.',
+        'disc-li2': 'If you do not agree with any part of this disclaimer, please refrain from using the website.',
+        'disc-li3': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> reserves the right to modify or update this disclaimer at any time without prior notice. Continued use of the website after changes implies acceptance of the updated terms.',
+
+        'disc-thanks1': 'Thank you for visiting.',
+        'disc-thanks2': 'We hope you find the information useful and informative.',
+
+        // footer
+        'footer-disclaimer': 'Disclaimer',
+        'footer-donate': 'Donate',
+        'footer-dev-text': 'Developed by Mahsua Technology with ❤️ from India (Free and Open-Source)',
+        'footer-copy': '© 2025 Chitrakoot Dham • Designed with devotion'
+      },
+
+      hi: {
+        'crumb-home': 'मुखपृष्ठ',
+        'crumb-page': 'अस्वीकरण',
+
+        'disc-heading': 'अस्वीकरण',
+        'disc-p1': 'यह वेबसाइट चित्रकूट धाम के बारे में मूलभूत जानकारी उपलब्ध कराने के लिए एक <strong class="text-gray-900">सार्वजनिक सेवा पहल</strong> के रूप में <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a></strong> द्वारा बनाई गई है, ताकि आगंतुकों और स्थानीय समुदाय को सहायता मिल सके।',
+        'disc-warning': 'यह किसी भी संबंधित मंदिर, ट्रस्ट, संगठन या सरकारी विभाग की <strong class="text-red-600">आधिकारिक वेबसाइट नहीं</strong> है, न ही यह इन स्थानों के प्रबंधन या प्रशासन द्वारा सीधे रूप से संचालित, अनुमोदित या अधिकृत है।',
+        'disc-p2': 'यहाँ दी गई सभी जानकारी जैसे फोटो, सामान्य विवरण, समय-सारणी, मार्गदर्शन और संपर्क विवरण सार्वजनिक स्रोतों, स्थानीय जानकारी या उपयोगकर्ता द्वारा भेजी गई सूचनाओं पर आधारित हैं।',
+        'disc-p3': 'हम सामग्री को सही और अद्यतन रखने का प्रयास करते हैं, फिर भी <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> इस वेबसाइट पर प्रदर्शित किसी भी जानकारी की पूर्णता, शुद्धता या आधिकारिक स्थिति की गारंटी नहीं देता</strong>।',
+        'disc-p4': 'यदि आप किसी भी स्थान के आधिकारिक प्रशासन का प्रतिनिधित्व करते हैं और इस वेबसाइट पर दिखाए गए किसी भाग में परिवर्तन, संशोधन या हटाने का अनुरोध करना चाहते हैं, तो कृपया हमसे <a href="https://mahsua.com/contact" class="text-blue-600 hover:underline font-medium" target="_blank" rel="noopener">mahsua.com/contact</a> पर संपर्क करें। हम यथाशीघ्र और सम्मानपूर्वक कार्यवाही करेंगे।',
+        'disc-p5': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> यह वेबसाइट समुदाय की सेवा के रूप में पूर्णतः <strong class="text-gray-900">निःशुल्क</strong> प्रदान करता है।',
+        'disc-p6': 'इस वेबसाइट पर प्रदर्शित विज्ञापन (यदि हों) होस्टिंग, विकास और रखरखाव जैसे खर्चों को वहन करने में मदद करते हैं। ये विज्ञापन <strong class="text-gray-900">Google AdSense या अन्य प्रदाताओं</strong> द्वारा दिखाए जा सकते हैं, और <a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> उन विज्ञापनों में दिखाए गए किसी भी उत्पाद या सेवा का समर्थन नहीं करता।',
+
+        'disc-terms-heading': 'उपयोग की शर्तें',
+        'disc-li1': 'इस वेबसाइट का उपयोग करते समय आप इस अस्वीकरण की शर्तों से सहमत होते हैं।',
+        'disc-li2': 'यदि आप इस अस्वीकरण के किसी भी भाग से सहमत नहीं हैं, तो कृपया इस वेबसाइट का उपयोग न करें।',
+        'disc-li3': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener">Mahsua Technology</a> बिना पूर्व सूचना के किसी भी समय इस अस्वीकरण में परिवर्तन या अद्यतन करने का अधिकार रखता है। परिवर्तन के बाद भी वेबसाइट का निरंतर उपयोग अद्यतन शर्तों की स्वीकृति मानी जाएगी।',
+
+        'disc-thanks1': 'आपके आगमन के लिए धन्यवाद।',
+        'disc-thanks2': 'आशा है कि यह जानकारी आपके लिए उपयोगी और ज्ञानवर्धक सिद्ध होगी।',
+
+        // footer
+        'footer-disclaimer': 'अस्वीकरण',
+        'footer-donate': 'दान',
+        'footer-dev-text': 'विकसित: Mahsua Technology द्वारा, भारत से ❤️ (निःशुल्क और मुक्त स्रोत)',
+        'footer-copy': '© 2025 चित्रकूट धाम • श्रद्धा के साथ निर्मित'
+      }
+    };
+
+    function setLanguage(lang) {
+      const set = translations[lang];
+      if (!set) return;
+
+      Object.keys(set).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = set[id];
+      });
+
+      document.documentElement.lang = lang === 'hi' ? 'hi' : 'en';
+
+      document.querySelector('.lang-en').classList.toggle('active', lang === 'en');
+      document.querySelector('.lang-hi').classList.toggle('active', lang === 'hi');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => setLanguage('en'));
+  </script>
+</body>
+</html>
