@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री महाकालेश्वर, काल भैरव और महाकाल लोक - Mahsua India Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Noto Sans Devanagari', sans-serif; }
+        .english-font { font-family: 'Poppins', sans-serif; }
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1621619671683-1994a8f94cb9?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .mahakal-lok-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mahakal_Lok_Corridor_Ujjain.jpg/1200px-Mahakal_Lok_Corridor_Ujjain.jpg');
+            background-size: cover; 
+            background-position: center;
+            /* Fallback color if image fails */
+            background-color: #1e293b;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-orange-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900/95 backdrop-blur-md text-white shadow-xl sticky top-0 z-50 border-b border-slate-700">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center font-bold text-white shadow-lg text-xl">M</div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold english-font leading-none">Mahsua<span class="text-orange-500">India</span></span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-widest">Travel & Culture</span>
+                </div>
+            </div>
+            <div class="hidden lg:flex space-x-6 text-sm font-medium english-font items-center text-slate-300">
+                <a href="#mahakal" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Mahakal</a>
+                <a href="#mahakallok" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Mahakal Lok</a>
+                <a href="#bhairav" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Kaal Bhairav</a>
+                <a href="#sacred" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">Sacred Spots</a>
+                <a href="#contact" class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2 rounded-full hover:shadow-lg hover:scale-105 transition transform flex items-center gap-2">
+                    <i data-lucide="calendar-check" class="w-4 h-4"></i> Plan Trip
+                </a>
+            </div>
+            <!-- Mobile Menu Button (Visible on small screens) -->
+            <button class="lg:hidden text-white"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section min-h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-5xl text-white relative z-10 animate-fade-in-up">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2 rounded-full text-sm font-semibold mb-8 animate-pulse shadow-lg">
+                <span class="w-2 h-2 bg-orange-500 rounded-full shadow-[0_0_10px_orange]"></span>
+                The Eternal City of Time
+            </div>
+            <h1 class="text-6xl md:text-9xl font-bold mb-4 leading-none drop-shadow-2xl tracking-tight">
+                अवंतिका
+            </h1>
+            <p class="text-2xl md:text-3xl font-light text-slate-200 mb-10 max-w-3xl mx-auto leading-relaxed">
+                ब्रह्मांड का केंद्र। मोक्ष की नगरी।<br>
+                <span class="text-orange-400 font-semibold">महाकाल</span> का शासन, <span class="text-red-500 font-semibold">भैरव</span> का रक्षण।
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#mahakal" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition shadow-xl flex items-center justify-center gap-2 group">
+                    दर्शन यात्रा शुरू करें
+                    <i data-lucide="arrow-down-circle" class="w-5 h-5 group-hover:translate-y-1 transition-transform text-orange-600"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 animate-bounce text-white/50">
+            <i data-lucide="chevrons-down" class="w-8 h-8"></i>
+        </div>
+    </header>
+
+    <!-- Intro Stats -->
+    <section class="bg-white py-12 border-b border-slate-200">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-orange-600 mb-1">12</div>
+                <div class="text-sm text-slate-600 font-medium uppercase tracking-wide">ज्योतिर्लिंगों में प्रधान</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-orange-600 mb-1">51</div>
+                <div class="text-sm text-slate-600 font-medium uppercase tracking-wide">शक्तिपीठ (हरसिद्धि)</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-orange-600 mb-1">7</div>
+                <div class="text-sm text-slate-600 font-medium uppercase tracking-wide">मोक्ष दायिनी पुरियाँ</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-orange-600 mb-1">0°</div>
+                <div class="text-sm text-slate-600 font-medium uppercase tracking-wide">प्राचीन मेरिडियन (समय केंद्र)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAHAKAL SECTION -->
+    <section id="mahakal" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Composition -->
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-200 rounded-full opacity-50 blur-xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-red-200 rounded-full opacity-50 blur-xl"></div>
+                    <img src="https://images.unsplash.com/photo-1605634352778-957790757d23?q=80&w=1600&auto=format&fit=crop" alt="Mahakaleshwar Temple" class="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover z-10">
+                    <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-xl p-6 rounded-2xl shadow-lg z-20 border border-white/50">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-orange-600 text-white p-3 rounded-full">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900 text-lg">भस्म आरती समय</p>
+                                <p class="text-slate-600 text-sm">प्रातः 4:00 AM - 6:00 AM (बुकिंग अनिवार्य)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:w-1/2">
+                    <span class="text-orange-600 font-bold tracking-widest uppercase text-sm bg-orange-100 px-3 py-1 rounded-full">The King of Ujjain</span>
+                    <h2 class="text-5xl font-bold text-slate-900 mt-4 mb-8 leading-tight">श्री महाकालेश्वर<br><span class="text-slate-500 text-3xl">मृत्युंजय स्वरूप</span></h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-5 group">
+                            <div class="bg-white p-4 rounded-xl shadow-md h-fit text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition duration-300"><i data-lucide="compass" class="w-6 h-6"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-slate-800 mb-2">दक्षिणमुखी ज्योतिर्लिंग</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    संपूर्ण विश्व में यह एकमात्र शिव मंदिर है जहाँ शिवलिंग का मुख दक्षिण (मृत्यु की दिशा) की ओर है। इसका आध्यात्मिक अर्थ है कि महाकाल मृत्यु को भी नियंत्रित करते हैं। अकाल मृत्यु का भय यहाँ समाप्त हो जाता है।
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-5 group">
+                            <div class="bg-white p-4 rounded-xl shadow-md h-fit text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition duration-300"><i data-lucide="flame" class="w-6 h-6"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-slate-800 mb-2">भस्म आरती का विधान</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    यह आरती ब्रह्म मुहूर्त में होती है। भगवान को चिता भस्म (प्रतीकात्मक) अर्पित की जाती है। <br>
+                                    <span class="text-orange-700 font-medium text-sm mt-2 block">Mahsua Tip: आरती देखने के लिए 1 महीना पहले ऑनलाइन बुकिंग करें।</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 group">
+                            <div class="bg-white p-4 rounded-xl shadow-md h-fit text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition duration-300"><i data-lucide="layers" class="w-6 h-6"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-slate-800 mb-2">मंदिर के तीन तल</h3>
+                                <p class="text-slate-600 text-sm">
+                                    1. <strong>गर्भ गृह:</strong> श्री महाकालेश्वर (मुख्य दर्शन)<br>
+                                    2. <strong>मध्य तल:</strong> श्री ओंकारेश्वर महादेव<br>
+                                    3. <strong>शिखर तल:</strong> श्री नागचंद्रेश्वर (केवल नागपंचमी पर खुलता है)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAHAKAL LOK (NEW SECTION) -->
+    <section id="mahakallok" class="py-20 mahakal-lok-bg text-white relative">
+        <div class="absolute inset-0 bg-slate-900/80"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <span class="border border-orange-500 text-orange-400 px-4 py-1 rounded-full text-sm uppercase tracking-widest font-bold">New Attraction</span>
+            <h2 class="text-4xl md:text-6xl font-bold mt-4 mb-6">श्री महाकाल लोक</h2>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-12">
+                900 मीटर लंबा भव्य कॉरिडोर जो शिव लीलाओं का वर्णन करता है। यह भारत के सबसे बड़े धार्मिक गलियारों में से एक है।
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition">
+                    <i data-lucide="image" class="w-10 h-10 text-orange-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">108 शिव स्तंभ</h3>
+                    <p class="text-slate-300 text-sm">कॉरिडोर में 108 विशाल स्तंभ हैं, जिन पर भगवान शिव के आनंद तांडव स्वरूप को उकेरा गया है।</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition">
+                    <i data-lucide="landmark" class="w-10 h-10 text-orange-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">सप्त ऋषि मंडल</h3>
+                    <p class="text-slate-300 text-sm">यहाँ सप्त ऋषियों की भव्य प्रतिमाएँ स्थापित हैं जो भारतीय ज्ञान परंपरा और गुरु-शिष्य परंपरा का प्रतीक हैं।</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition">
+                    <i data-lucide="sun-moon" class="w-10 h-10 text-orange-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">रात्रि दर्शन</h3>
+                    <p class="text-slate-300 text-sm">महाकाल लोक की सुंदरता रात में अद्भुत होती है जब आधुनिक लाइटिंग से मूर्तियाँ जीवंत हो उठती हैं।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KAAL BHAIRAV SECTION -->
+    <section id="bhairav" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-16">
+                <span class="text-red-600 font-bold tracking-widest uppercase text-sm">The Guardian (Kotwal)</span>
+                <h2 class="text-5xl font-bold text-slate-900 mt-2">श्री काल भैरव मंदिर</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Info Cards -->
+                <div class="space-y-6">
+                    <div class="bg-slate-50 border-l-4 border-red-600 p-6 rounded-r-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">🍶 मदिरा (शराब) का रहस्य</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            यह दुनिया का एकमात्र मंदिर है जहाँ भगवान की मूर्ति मदिरा पान करती है। वैज्ञानिक भी इस रहस्य को सुलझा नहीं पाए हैं कि मदिरा कहाँ जाती है (कोई छिद्र या नाली नहीं मिली)। यह अहंकार त्याग का प्रतीक है।
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 border-l-4 border-orange-600 p-6 rounded-r-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">👳 सिंधिया पगड़ी</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            भगवान काल भैरव हमेशा मराठा पगड़ी पहनते हैं। यह परंपरा 1761 से चली आ रही है जब महादजी शिंदे ने पानीपत युद्ध के बाद मराठा साम्राज्य की वापसी के लिए मन्नत मांगी थी।
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 border-l-4 border-slate-800 p-6 rounded-r-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">⚖️ न्याय के देवता</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            इन्हें उज्जैन का कोतवाल (Chief of Police) कहा जाता है। लोग यहाँ कोर्ट-कचहरी और मुकदमों में जीत के लिए 'सरसों के तेल का दीपक' जलाने आते हैं।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="grid grid-cols-2 gap-4 h-full">
+                    <img src="https://images.unsplash.com/photo-1608625902047-9877b1022204?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8 card-hover" alt="Ritual">
+                    <img src="https://images.unsplash.com/photo-1596541223513-33e30f14f526?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg w-full h-64 object-cover mb-8 card-hover" alt="Ujjain Vibes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHER SACRED SPOTS (NEW SECTION) -->
+    <section id="sacred" class="py-24 bg-orange-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-4xl font-bold text-center text-slate-900 mb-12">उज्जैन के अन्य पवित्र स्थल</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Harsiddhi Mata -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-slate-800 relative">
+                        <!-- Use a generic lamp image if specific temple image fails -->
+                        <img src="https://images.unsplash.com/photo-1516212613589-a3b04323630f?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">हरसिद्धि माता (शक्तिपीठ)</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">
+                            यह 51 शक्तिपीठों में से एक है। पौराणिक कथाओं के अनुसार यहाँ माता सती की <strong>कोहनी (Elbow)</strong> गिरी थी। यहाँ के दो विशाल <strong>दीप स्तंभ (Deep Stambh)</strong> जब जलाए जाते हैं, तो दृश्य अद्भुत होता है।
+                        </p>
+                        <span class="text-orange-600 text-xs font-bold uppercase">Must Visit in Evening</span>
+                    </div>
+                </div>
+
+                <!-- Sandipani Ashram -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1623838815348-1f636c0a002c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">संदीपनी आश्रम</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">
+                            यह शिक्षा का प्राचीन केंद्र है जहाँ <strong>भगवान श्री कृष्ण, बलराम और सुदामा</strong> ने गुरु संदीपनी से शिक्षा ग्रहण की थी। माना जाता है कि कृष्ण ने यहाँ 64 दिनों में 64 कलाएँ सीखी थीं।
+                        </p>
+                        <span class="text-orange-600 text-xs font-bold uppercase">Education Hub</span>
+                    </div>
+                </div>
+
+                <!-- Mangalnath -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1532599268803-34d284992bb3?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">मंगलनाथ मंदिर</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">
+                            मत्स्य पुराण के अनुसार, यह <strong>मंगल ग्रह (Mars) का जन्मस्थान</strong> है। जिन लोगों की कुंडली में 'मंगल दोष' होता है, वे यहाँ विशेष 'भात पूजा' (चावल पूजा) करवाने आते हैं।
+                        </p>
+                        <span class="text-orange-600 text-xs font-bold uppercase">Astrology Center</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL PROTOCOL -->
+    <section class="py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-12">यात्रा का सही क्रम (Protocol)</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-20 right-20 h-1 bg-slate-700 -z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
+                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">1</div>
+                    <h3 class="text-xl font-bold mb-1">शिप्रा स्नान</h3>
+                    <p class="text-slate-400 text-xs">राम घाट पर शुद्धि स्नान।</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
+                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">2</div>
+                    <h3 class="text-xl font-bold mb-1">महाकाल दर्शन</h3>
+                    <p class="text-slate-400 text-xs">राजाधिराज का आशीर्वाद।</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-800 p-8 rounded-full border-4 border-slate-700 w-64 h-64 flex flex-col items-center justify-center text-center relative z-10 hover:border-orange-500 transition cursor-pointer group">
+                    <div class="bg-orange-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3">3</div>
+                    <h3 class="text-xl font-bold mb-1">काल भैरव</h3>
+                    <p class="text-slate-400 text-xs">नगर से जाने की आज्ञा।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Mahsua Branding -->
+    <footer id="contact" class="bg-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">M</div>
+                        <span class="text-2xl font-bold text-slate-900 english-font">Mahsua<span class="text-orange-600">India</span></span>
+                    </div>
+                    <p class="text-slate-500 leading-relaxed max-w-md">
+                        Connecting you to the roots of Indian spirituality through technology. We simplify your pilgrimage with digital services.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="bg-slate-100 p-2 rounded-full hover:bg-orange-100 hover:text-orange-600 transition"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services Box -->
+                <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full blur-3xl opacity-20 -mr-10 -mt-10"></div>
+                    <p class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-2">Need Help?</p>
+                    <h3 class="text-2xl font-bold mb-4">Mahsua Digital Seva Kendra</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Train & Flight Booking</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Hotel Reservation in Ujjain</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Bhasma Aarti Booking Assistance</li>
+                    </ul>
+                    <button class="bg-green-600 hover:bg-green-700 text-white w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us Now
+                    </button>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-100 pt-8 text-center text-sm text-slate-400 flex flex-col md:flex-row justify-between items-center">
+                <span>&copy; 2025 Mahsua India. All Rights Reserved.</span>
+                <span class="mt-2 md:mt-0 flex items-center gap-1">Built with <i data-lucide="heart" class="w-3 h-3 text-red-500 fill-current"></i> by Shivam Kushwaha</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
