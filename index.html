@@ -36,27 +36,45 @@
 
     <!-- Navbar (Hindi Header) -->
     <nav class="bg-slate-900/95 backdrop-blur-md text-white shadow-xl sticky top-0 z-50 border-b border-slate-700">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center font-bold text-white shadow-lg text-xl">M</div>
-                <div class="flex flex-col">
-                    <span class="text-xl font-bold english-font leading-none">श्री <span class="text-orange-500">काल भैरव</span> मंदिर उज्जैन</span>
-                    <span class="text-[10px] text-slate-400 uppercase tracking-widest">यह मंदिर 1000 वर्ष से भी अधिक पुराना है।</span>
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold english-font leading-none">श्री <span class="text-orange-500">काल भैरव</span> मंदिर उज्जैन</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-widest">यह मंदिर 1000 वर्ष से भी अधिक पुराना है।</span>
+                    </div>
                 </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-6 text-sm font-medium items-center text-slate-300">
+                    <a href="#mahakal" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">श्री महाकाल</a>
+                    <a href="#mahakallok" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">महाकाल लोक</a>
+                    <a href="#bhairav" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">काल भैरव</a>
+                    <a href="#sacred" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">पवित्र स्थल</a>
+                    <a href="#location" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">लोकेशन</a>
+                    <a href="https://shrimahakaleshwar.com/" target="_blank" class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2 rounded-full hover:shadow-lg hover:scale-105 transition transform flex items-center gap-2 font-bold">
+                        <i data-lucide="calendar-check" class="w-4 h-4"></i> यात्रा प्लान करें
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-orange-500 transition focus:outline-none">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
             </div>
-            <!-- Hindi Menu Items -->
-            <div class="hidden lg:flex space-x-6 text-sm font-medium items-center text-slate-300">
-                <a href="#mahakal" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">श्री महाकाल</a>
-                <a href="#mahakallok" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">महाकाल लोक</a>
-                <a href="#bhairav" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">काल भैरव</a>
-                <a href="#sacred" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">पवित्र स्थल</a>
-                <a href="#location" class="hover:text-white hover:bg-slate-800 px-3 py-1 rounded transition">लोकेशन</a>
-                <a href="#contact" class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2 rounded-full hover:shadow-lg hover:scale-105 transition transform flex items-center gap-2 font-bold">
-                    <i data-lucide="calendar-check" class="w-4 h-4"></i> यात्रा प्लान करें
+
+            <!-- Mobile Menu Dropdown (Hidden by default) -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-slate-700 flex flex-col space-y-2">
+                <a href="#mahakal" class="mobile-link block py-2 px-4 hover:bg-slate-800 rounded transition text-slate-300 hover:text-white">श्री महाकाल</a>
+                <a href="#mahakallok" class="mobile-link block py-2 px-4 hover:bg-slate-800 rounded transition text-slate-300 hover:text-white">महाकाल लोक</a>
+                <a href="#bhairav" class="mobile-link block py-2 px-4 hover:bg-slate-800 rounded transition text-slate-300 hover:text-white">काल भैरव</a>
+                <a href="#sacred" class="mobile-link block py-2 px-4 hover:bg-slate-800 rounded transition text-slate-300 hover:text-white">पवित्र स्थल</a>
+                <a href="#location" class="mobile-link block py-2 px-4 hover:bg-slate-800 rounded transition text-slate-300 hover:text-white">लोकेशन</a>
+                <a href="https://shrimahakaleshwar.com/" target="_blank" class="mobile-link block py-2 px-4 bg-orange-600 text-white rounded font-bold text-center mt-2">
+                    यात्रा प्लान करें
                 </a>
             </div>
-            <!-- Mobile Menu Button -->
-            <button class="lg:hidden text-white"><i data-lucide="menu"></i></button>
         </div>
     </nav>
 
@@ -352,6 +370,7 @@
                             "The best time to visit is early morning for Bhasma Aarti at Mahakal, or after 6:00 PM for the evening Aarti at Kaal Bhairav."
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -382,7 +401,27 @@
     </footer>
 
     <script>
+        // Lucide Icons Init
         lucide.createIcons();
+
+        // Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        // Select all links inside the mobile menu
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu on burger click
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when ANY mobile link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 </body>
 </html>
